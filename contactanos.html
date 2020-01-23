@@ -14,15 +14,7 @@
 </head>
 <body>
 
-<!--     <div class="modal_wrap">
-        <div class="mensaje_modal">
-            <h3>Errores encontrados</h3>
-            <p>Escriba un nombre</p>
-            <p>Ingrese un correo</p>
-            <p>Escriba un mensaje</p>
-            <span id="btnClose">Cerrar</span>
-        </div> -->
-    </div>
+
     <section class="form_wrap">
         <section class="contact_info">
 
@@ -38,22 +30,22 @@
 
         </section>
 
-        <form action="" class="form_contact">
+        <form action="enviar.php" method="post" class="form_contact">
             <h2>Envianos un mensaje</h2>
             <div class="user_info">
                 <label for="names">Nombres *</label>
-                <input type="text" id="names">
+                <input type="text" id="names" name="nombre" required>
 
                 <label for="phone">Telefono / Celular</label>
-                <input type="text" id="phone">
+                <input type="text" id="phone" name="telefono">
 
                 <label for="email">Correo electrónico *</label>
-                <input type="text" id="email">
+                <input type="text" id="email" name="correo" required>
 
                 <label for="mensaje">Mensaje *</label>
-                <textarea  id="mensaje" cols="30" rows="5"></textarea>
+                <textarea  id="mensaje" cols="30" rows="5" name="mensaje" required></textarea>
 
-                <input type="button" value="Enviar Mensaje" id="btn_send">
+                <input type="submit" value="Enviar Mensaje" id="btn_send">
 
             </div>
         </form>
