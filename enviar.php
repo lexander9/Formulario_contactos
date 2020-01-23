@@ -8,7 +8,7 @@
 
     //Datos para el correo
     $destinatario="alexander.morenoc@outlook.com";
-    $asumto="Contacto desde la web braille";
+    $asunto="Contacto desde la web braille";
     $carta= "De: $nombre \n";
     $carta .= "Correo: $correo \n";
     $carta .="Telefono: $telefono \n";
